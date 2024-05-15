@@ -19,11 +19,10 @@ smoother.effects(".clinic-mark2", { speed: "1.09" });
 smoother.effects(".clinic-mark3", { speed: "1.08" });
 smoother.effects(".clinic-mark4", { speed: "1.07" });
 
-smoother.effects(".feature-number-text", { speed: "1.06" });
-
-smoother.effects(".feature-text-1", { speed: "0.95" });
-smoother.effects(".feature-text-2", { speed: "0.93" });
 smoother.effects(".feature .thumb", { speed: "0.82" });
+
+smoother.effects(".footer-clinic-mark", { speed: "1.06" });
+
 
 if (window.innerWidth > 768) {
     smoother.effects(".feature .content-wrapper", { speed: "1.07" });

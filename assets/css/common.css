@@ -643,6 +643,12 @@ p.ft_icon img {
     background: #83b7c0;
 }
 
+@media screen and (max-width: 768px) {
+    .copyright {
+        font-size: 12px;
+    }
+}
+
 /********************************
 	Responsive
 *********************************/
@@ -2458,6 +2464,18 @@ div.btn-style a:hover {
     }
 }
 
+.font-36-700 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    .font-36-700 {
+        font-size: 26px;
+        font-weight: 700;
+    }
+}
+
 .font-32-700 {
     font-size: 32px;
     font-weight: 700;
@@ -2479,12 +2497,205 @@ div.btn-style a:hover {
     font-weight: 700;
 }
 
+@media screen and (max-width: 768px) {
+    .font-24-500 {
+        font-size: 20px;
+    }
+}
+
+.font-24-500 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .font-24-500 {
+        font-size: 20px;
+    }
+}
+
 .font-20-400 {
     font-size: 20px;
     font-weight: 400;
 }
 
+.font-20-700 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    .font-20-700 {
+        font-size: 18px;
+    }
+}
+
 a {
     text-decoration: none;
     cursor: pointer;
+}
+
+.footer-clinic-mark {
+    position: absolute;
+    display: block;
+    width: 20%;
+    bottom: 104px;
+    right: 5%;
+    transform: rotate(12deg);
+    opacity: 0.4;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-clinic-mark {
+        width: 76%;
+        bottom: 140px;
+    }
+}
+
+.sub-mainview {
+    display: block;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 12 / 3;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .sub-mainview {
+        aspect-ratio: 7 / 3;
+    }
+}
+
+.sub-mainview .mainview-bg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-filter: blur(8px);
+}
+
+.sub-mainview .page-title {
+    position: absolute;
+    width: fit-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFF;
+}
+
+@media screen and (max-width: 768px) {
+    .sub-mainview .page-title {
+        background: unset;
+    }
+}
+
+.sub-mainview .page-title .en-title {
+    margin-bottom: 8px;
+}
+
+
+.timeline {
+    line-height: 1.4em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.timeline h1,
+.timeline h2,
+.timeline h3,
+.timeline h4,
+.timeline h5,
+.timeline h6 {
+    line-height: inherit;
+}
+
+.timeline-item {
+    padding-left: 40px;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .timeline-item {
+        padding-left: 28px;
+    }
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-info {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.timeline-marker {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15px;
+}
+
+.timeline-marker:before {
+    border: 3px solid transparent;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: 15px;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+    background: transparent;
+    border: 2px solid #FF6B6B;
+    z-index: 1;
+}
+
+.timeline-marker:after {
+    content: "";
+    width: 2px;
+    height: calc(100% - 14px);
+    background: #CCD5DB;
+    display: block;
+    position: absolute;
+    top: 17px;
+    bottom: 0;
+    left: 6px;
+}
+
+.timeline-item:last-child .timeline-marker:after {
+    content: none;
+}
+
+.timeline-item:not(.period):hover .timeline-marker:before {
+    background: #FF6B6B;
+}
+
+.timeline-content {
+    padding-bottom: 12px;
+}
+
+.timeline-content p:last-child {
+    margin-bottom: 0;
+}
+
+.container {
+    display: block;
+    position: relative;
+    width: 86%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 92%;
+        max-width: 100%;
+    }
 }
