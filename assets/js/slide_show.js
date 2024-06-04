@@ -21,7 +21,7 @@
       // fade: true,
       dots: true,
       // cssEase: 'ease-in-out',
-    }).slickAnimation();
+    });
 
 
     $('.slick-nav').on('click touch', function (e) {

@@ -11,64 +11,6 @@ $(window).on('load resize', function () {
     }
 });
 
-//ページ内リンクのスムーススクロール
-$(window).load(function () {
-    //$(document).ready(function(){
-    // var urlHash = location.hash; //URLのハッシュ値を取得 
-    // if (urlHash) { //ハッシュ値があればページ内スクロール
-    //     $('body,html').stop().scrollTop(0); //スクロールを0に戻す
-    //     setTimeout(function () { //ロード時の処理を待ち、時間差でスクロール実行
-    //         scrollToAnker(urlHash);
-    //     }, 100);
-    // }
-    // $('a[href^="#"]').click(function () { //通常のクリック時
-    //     var href = $(this).attr("href"); //ページ内リンク先を取得
-    //     var hash = href == "#" || href == "" ? 'html' : href; //リンク先が#か空だったらhtmlに    
-    //     scrollToAnker(hash); //スクロール実行
-    //     return false;
-    // });
-
-    // function scrollToAnker(hash) {
-    //     var target = $(hash);
-    //     var position = target.offset().top;
-    //     $('body,html').stop().animate({
-    //         scrollTop: position
-    //     }, 500); // 指定したアンカーへアニメーションでスクロール
-    // }
-})
-
-//SPメニュー
-/*
-var w = $(window).width();
-var x = 768;
-var navlink = $('#nav .menu-item-has-children > a');
-var megamenu = $('#nav .submenu-wrap');
-var spnav = $('#nav ');
-var sptoggle = $('#toggle');
-
-jQuery(function($){	
-if (w < x) {//画面サイズが768px未満のときの処理
-$(navlink).on('click', function() {
-$( this ).next().slideToggle();
-return false;
-});
-} else {//それ以外のときの処理
-$(navlink).click(function(){
-});
-}
-//クリックされるたびに呼ばれる
-$(sptoggle).on("click", function() {
-var windowWidth = window.innerWidth;
-if (windowWidth <= 767) {
-$( spnav ).slideToggle();
-return false;
-} else {
-}
-});
-});
-*/
-
-
 //SPメニュー
 var w = $(window).width();
 var x = 768;

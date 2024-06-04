@@ -49,7 +49,7 @@ figure {
 .page-title {
     overflow: hidden;
     position: relative;
-    background: url(img/under_title.jpg) no-repeat center/cover;
+    /* background: url(img/under_title.jpg) no-repeat center/cover; */
     text-align: center;
     padding: 1.5em 0;
     width: 100%;
@@ -881,7 +881,7 @@ ol.ol_decimal>li:before {
 
 .time-table {
     width: 100%;
-    margin-bottom: 1.6em;
+    margin-bottom: 2.6em;
 }
 
 .time-table th,
@@ -911,6 +911,11 @@ ol.ol_decimal>li:before {
 
 .time-table td {
     background: transparent;
+    color: #57bdc9;
+}
+
+.time-table td .nobusiness {
+    color: #333;
 }
 
 .color02 {
@@ -2242,7 +2247,7 @@ dl.dl_number dd {
 
     .post-type-page h3,
     .mainblock h3 {
-        font-size: 24px;
+        /* font-size: 24px; */
     }
 
     .entry-block h3 {
@@ -2251,7 +2256,7 @@ dl.dl_number dd {
 
     .post-type-page h4,
     .mainblock h4 {
-        font-size: 20px;
+        /* font-size: 20px; */
     }
 
     .post-type-page h5,
@@ -2743,8 +2748,34 @@ dl.dl_number dd {
 @media screen and (max-width: 768px) {
     .mainview {
         /* margin-bottom: 5.6rem; */
-        height: fit-content;
+        aspect-ratio: 1 / 1.1;
+        height: auto;
     }
+}
+
+.mainview .features {
+    display: block;
+    position: absolute;
+    width: 32%;
+    top: 54%;
+    right: 17%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .mainview .features {
+        width: 82%;
+        top: 54%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+}
+
+.mainview .features .circle-img {
+    display: block;
+    width: 100%;
+    position: relative;
 }
 
 .mainview-bg {
@@ -2774,7 +2805,7 @@ dl.dl_number dd {
 
 .mainview .banner__slider {
     display: block;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     top: 0;
