@@ -357,7 +357,7 @@ img {
 /* コンテンツの下部余白 -------------*/
 
 .mainblock.under {
-    padding-bottom: 3em;
+    padding-bottom: 0;
 }
 
 /*==========================
@@ -2535,6 +2535,7 @@ div.btn-style a:hover {
         font-size: 20px;
     }
 }
+
 .font-28-700 {
     font-size: 28px;
     font-weight: 700;
@@ -2565,6 +2566,17 @@ div.btn-style a:hover {
 @media screen and (max-width: 768px) {
     .font-24-500 {
         font-size: 20px;
+    }
+}
+
+.font-20-700 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    .font-20-700 {
+        font-size: 18px;
     }
 }
 
@@ -2742,7 +2754,7 @@ a {
     height: 10px;
     transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
     background: transparent;
-    border: 2px solid #FF6B6B;
+    border: 2px solid #fba31e;
     z-index: 1;
 }
 
@@ -2763,7 +2775,7 @@ a {
 }
 
 .timeline-item:not(.period):hover .timeline-marker:before {
-    background: #FF6B6B;
+    background: #fba31e;
 }
 
 .timeline-content {
@@ -2778,7 +2790,7 @@ a {
     display: block;
     position: relative;
     width: 86%;
-    max-width: 1320px;
+    max-width: 1240px;
     margin: 0 auto;
 }
 
@@ -2805,7 +2817,7 @@ a {
     width: 8%;
     height: 3px;
     left: 0;
-    bottom: -1px;
+    bottom: -2px;
     background: #57bdc9;
     transition: width 0.3s ease-in;
 }
@@ -2964,4 +2976,179 @@ a.href-right:hover {
         margin-top: 2rem;
         margin-bottom: 2.4rem;
     }
+}
+
+.title-wrapper {
+    width: fit-content;
+    position: relative;
+    display: flex;
+    column-gap: 16px;
+    margin: 0 auto 52px auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .title-wrapper {
+        margin-bottom: 44px;
+    }
+}
+
+.title-wrapper .clinic-icon {
+    width: 36px;
+    margin-top: -4px;
+}
+
+.title-wrapper span {
+    color: #96730e;
+}
+
+.manual-table {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.manual-table .record {
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .manual-table .record {
+        flex-direction: column;
+    }
+}
+
+.manual-table .record .th {
+    display: flex;
+    align-items: center;
+    width: 16%;
+    flex-shrink: 0;
+    padding: 16px 24px;
+    border-left: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    background: #b8e7ec;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+    .manual-table .record .th {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.manual-table .record:first-child .th {
+    border-top: 1px solid #dadada;
+}
+
+.manual-table .record .td {
+    display: block;
+    width: 100%;
+    padding: 16px 24px;
+    border-right: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+    .manual-table .record .td {
+        border-left: 1px solid #dadada;
+    }
+}
+
+.manual-table .record:first-child .td {
+    border-top: 1px solid #dadada;
+}
+
+@media only screen and (max-width: 768px) {
+    .manual-table .record:first-child .td {
+        border-top: unset;
+    } 
+    .manual-table .record:last-child .td {
+        border-bottom: 1px solid #dadada;
+    } 
+}
+
+.left-right {
+    position: relative;
+    width: 100%;
+    display: flex;
+    column-gap: 72px;
+}
+
+@media only screen and (max-width: 768px) {
+    .left-right {
+        flex-direction: column-reverse;
+        row-gap: 28px;
+    }
+}
+
+.left-right.reverse {
+    flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 768px) {
+    .left-right.reverse {
+        flex-direction: column-reverse;
+    }
+}
+
+.left-right .right-part {
+    position: relative;
+    display: block;
+    width: 40%;
+    flex-shrink: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .left-right .right-part {
+        width: 100%;
+    }
+}
+
+.left-right .right-part .thumb {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    position: relative;
+}
+
+.rect-text {
+    display: flex;
+    padding: 6px 24px;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #57bdc9;
+}
+
+.under .title-wrapper {
+    margin-top: 76px;
+}
+
+.under .underline-title  {
+    margin-bottom: 1em;
+    margin-top: 1.5em;
+}
+
+.underline-text {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 12px;
+    z-index: 0;
+}
+
+.underline-text::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 8px;
+    bottom: 3px;
+    left: 0;
+    background-color: #fba31e99;
+    z-index: -1;
+}
+
+.medical-common-section img {
+    border-radius: 6px;
 }

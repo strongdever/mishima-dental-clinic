@@ -2240,7 +2240,7 @@ body.home h2 img {
 
 .clinic-info::after {
     position: absolute;
-    bottom: -54px;
+    bottom: -74px;
     background: url(../img/top_features_bg_btm.png) bottom left no-repeat;
     background-size: 100%;
     width: 100%;
@@ -2615,45 +2615,8 @@ body.home h2 img {
     }
 }
 
-.strength-page .strength-section .title-wrapper {
-    width: fit-content;
-    position: relative;
-    display: flex;
-    column-gap: 16px;
-    margin: 0 auto 52px auto;
-}
-
-@media only screen and (max-width: 768px) {
-    .strength-page .strength-section .title-wrapper {
-        margin-bottom: 44px;
-    }
-}
-
-.strength-page .strength-section .title-wrapper .clinic-icon {
-    width: 36px;
-    margin-top: -4px;
-}
-
-.strength-page .strength-section .title-wrapper span {
-    color: #96730e;
-}
-
 .strength-page .strength-section p {
     margin-bottom: 14px;
-}
-
-.strength-page .strength-section .left-right {
-    position: relative;
-    width: 100%;
-    display: flex;
-    column-gap: 72px;
-}
-
-@media only screen and (max-width: 768px) {
-    .strength-page .strength-section .left-right {
-        flex-direction: column-reverse;
-        row-gap: 28px;
-    }
 }
 
 .strength-page .strength-section>div {
@@ -2672,6 +2635,20 @@ body.home h2 img {
 
     .strength-page .strength-section>div:not(:first-child) {
         padding-top: 32px;
+    }
+}
+
+.strength-page .strength-section .left-right {
+    position: relative;
+    width: 100%;
+    display: flex;
+    column-gap: 72px;
+}
+
+@media only screen and (max-width: 768px) {
+    .strength-page .strength-section .left-right {
+        flex-direction: column-reverse;
+        row-gap: 28px;
     }
 }
 
@@ -2718,8 +2695,311 @@ body.home h2 img {
         width: 72%;
         margin: 0 auto;
     }
-    
+
     .strength-page .strength-section .orthodontic .left-right .right-part {
         width: 100%;
     }
+}
+
+.general-dentistry-page .general-dentistry-section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 76px;
+    padding-top: 108px;
+    padding-bottom: 108px;
+}
+
+@media only screen and (max-width: 768px) {
+    .general-dentistry-page .general-dentistry-section {
+        padding-top: 86px;
+        padding-bottom: 86px;
+        row-gap: 48px;
+    }
+}
+
+.general-dentistry-page .general-dentistry-section .causes .left-right {
+    margin-bottom: 24px;
+}
+
+.general-dentistry-page .general-dentistry-section .causes .left-right .right-part {
+    width: 26%;
+}
+
+@media only screen and (max-width: 768px) {
+    .general-dentistry-page .general-dentistry-section .causes .left-right .right-part {
+        width: 100%;
+    }
+}
+
+.general-dentistry-page .general-dentistry-section .manual-table {
+    margin-bottom: 40px;
+}
+
+.general-dentistry-page .general-dentistry-section .notice-wrapper .underline-title {
+    margin-bottom: 22px;
+}
+
+.general-dentistry-page .general-dentistry-section .how-tooth {
+    position: relative;
+    display: block;
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.general-dentistry-page .general-dentistry-section .how-tooth .steps {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+}
+
+.general-dentistry-page .general-dentistry-section .how-tooth .steps .step {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    border: 4px solid #57bdc9;
+    border-radius: 16px;
+    padding: 44px 44px 24px 44px;
+    column-gap: 44px;
+}
+
+@media only screen and (max-width: 768px) {
+    .general-dentistry-page .general-dentistry-section .how-tooth .steps .step {
+        padding: 32px 24px 24px 24px;
+    }
+}
+
+.general-dentistry-page .general-dentistry-section .how-tooth .steps .step:not(:last-child)::after {
+    position: absolute;
+    content: '';
+    width: 76px;
+    aspect-ratio: 332 / 82;
+    background-image: url(../img/down-triangle.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: -48px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.general-dentistry-page .general-dentistry-section .painless .left-right .right-part {
+    width: 28%;
+}
+
+@media only screen and (max-width: 768px) {
+    .general-dentistry-page .general-dentistry-section .painless .left-right .right-part {
+        width: 100%;
+    }
+}
+
+.root-canal-section {
+    position: relative;
+    width: 100%;
+    padding-top: 48px;
+    padding-bottom: 108px;
+}
+
+@media only screen and (max-width: 768px) {
+    .root-canal-section {
+        padding-top: 24px;
+        padding-bottom: 86px;
+        row-gap: 48px;
+    }
+}
+
+.root-canal-section .top-desc {
+    margin-bottom: 48px;
+}
+
+.root-canal-section .part1 {
+    display: block;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 56px;
+}
+
+.root-canal-section .part1 .underline-title {
+    display: block;
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.root-canal-section .part1 .rect-text {
+    margin-bottom: 24px;
+}
+
+.root-canal-section .left-right .right-part {
+    width: 30%;
+}
+
+.root-canal-section .title-wrapper {
+    padding-top: 0;
+}
+
+.root-canal-section .bg-block {
+    position: relative;
+    width: fit-content;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.root-canal-section .bg-block h6 {
+    background: unset;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.root-canal-section .bg-block .ul01 li {
+    width: fit-content;
+}
+
+.root-canal-section .flow-part {
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+}
+
+.root-canal-section .flow-part .flow-block h4:first-child {
+    text-align: center;
+}
+
+.root-canal-section .flow-part .flow-block {
+    border: 4px solid #57bdc9;
+    border-radius: 16px;
+    padding: 44px 44px 24px 44px;
+}
+
+@media only screen and (max-width: 768px) {
+    .root-canal-section .flow-part .flow-block {
+        padding: 36px 16px 16px 16px;
+    }
+}
+
+.root-canal-section .flow-part .flow-block::after {
+    border-top: 25px solid #57bdc9;
+}
+
+.ul_check li::after {
+    display: none !important;
+}
+
+.ul_check li::before {
+    background: unset !important;
+    border: unset !important;
+    background-image: url(../img/check-mark.svg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 20px !important;
+    height: auto;
+    aspect-ratio: 1 / 1;
+}
+
+.root-canal-section .border-block {
+    border: 1px solid #57bdc9;
+    border-radius: 8px;
+}
+
+.root-canal-section .border-block .bg-block {
+    width: 100%;
+}
+
+.root-canal-section .border-block .bg-block .ul01 li {
+    width: 100%;
+}
+
+.pediatric-dentistry-section,
+.medical-common-section {
+    position: relative;
+    width: 100%;
+    padding-top: 48px;
+    padding-bottom: 108px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .pediatric-dentistry-section,
+    .medical-common-section {
+        padding-top: 24px;
+        padding-bottom: 86px;
+        row-gap: 48px;
+    }
+}
+
+.pediatric-dentistry-page .container,
+.medical-common-page .container {
+    max-width: 1080px;
+}
+
+.orthodontics-list .columns .desc {
+    height: 42px;
+}
+
+@media only screen and (max-width: 768px) {
+    .implant-page .manual-table .record {
+        flex-direction: row;
+    }
+
+    .implant-page .manual-table .record .title p {
+        font-size: 14px;
+    }
+
+    .implant-page .manual-table .record .th {
+        width: 10%;
+        line-height: 20px;
+        padding: 12px 16px
+    }
+
+    .implant-page .manual-table .record .td {
+        font-size: 10px;
+        line-height: 20px;
+        padding: 12px 4px;
+    }
+
+    .implant-page .manual-table .record:first-child .td {
+        border-top: 1px solid #dadada;
+    }
+    .manual-table .record .td {
+        border-left: unset;
+    }
+}
+
+.whitening-section .flow-list {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gum-peeling-page .flow-part {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.home-medical-page .flow-part {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.access-googlemap {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 1;
+}
+
+@media only screen and (max-width: 768px) {
+    .access-googlemap {
+        aspect-ratio: 3 / 4;
+    }
+}
+
+.access-googlemap iframe {
+    width: 100%;
+    height: 100%;
 }

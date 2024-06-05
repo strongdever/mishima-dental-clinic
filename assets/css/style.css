@@ -334,7 +334,7 @@ img.img_size {
 
 /*-- H3 ------------*/
 
-.post-type-page h3,
+/* .post-type-page h3,
 .under h3 {
     color: #333;
     font-weight: 700;
@@ -347,9 +347,9 @@ img.img_size {
     position: relative;
     text-align: center;
     margin-top: 3em;
-}
+} */
 
-.post-type-page h3::before,
+/* .post-type-page h3::before,
 .under h3::before,
 .post-type-page h3::after,
 .under h3::after {
@@ -367,7 +367,7 @@ img.img_size {
     height: 47px;
     top: 0;
     background: url(img/h3.png) no-repeat center/cover;
-}
+} */
 
 .mainblock>h3:first-child,
 .mainblock>div:first-child h3,
@@ -450,7 +450,7 @@ h4.num_ttl:before {
 .under h5 {
     font-weight: 700;
     padding: 0.2em 1em;
-    border: solid 1px #83b7c0;
+    border: solid 1px #57bdc9;
     background-size: 1.4em;
     font-size: 20px;
     letter-spacing: 0.06em;
@@ -489,7 +489,7 @@ h5.num_ttl:before {
     margin-top: 1.5em;
     display: table;
     color: #333;
-    background: #b1d3d9;
+    background: #c0edf5;
     padding: 0.3em 1em;
 }
 
@@ -575,7 +575,7 @@ h4+.title p {
 .page-list {
     /* padding:25px 25px 15px;
 	border:2px solid #f8f6f1; */
-    border: 2px solid #628c93;
+    border: 2px solid #57BDC9;
     padding: 30px 40px;
     border-radius: 15px;
     margin-top: 40px;
@@ -615,7 +615,7 @@ h4+.title p {
     content: "";
     width: 0.5em;
     height: 0.5em;
-    background: #b3184a;
+    background: #fba31e;
     border-radius: 50%;
     top: 0.5em;
     left: 0.35em;
@@ -645,7 +645,7 @@ h4+.title p {
     content: "";
     width: 0.5em;
     height: 0.5em;
-    border: 3px solid #b3184a;
+    border: 3px solid #FBA31E;
     border-radius: 50%;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -725,7 +725,7 @@ ul.ul_check li:after {
     height: 0;
     border-style: solid;
     border-width: 4.5px 0 4.5px 7px;
-    border-color: transparent transparent transparent #b3184a;
+    border-color: transparent transparent transparent #FBA31E;
 }
 
 .ul_arrow li a {
@@ -1026,7 +1026,7 @@ ol.ol_decimal>li:before {
 }
 
 .fee-table tbody th {
-    background: #eaf3f5;
+    background: #CBE9ED;
     width: 40%;
     vertical-align: middle;
 }
@@ -1115,7 +1115,7 @@ dl.dl_number dd {
     box-sizing: border-box;
     padding: 50px 4%;
     margin-top: 1.2em;
-    border: 5px solid #c1dbe0;
+    border: 5px solid #57bdc9;
     background: #fff;
 }
 
@@ -1158,7 +1158,7 @@ dl.dl_number dd {
     padding-left: 0;
     display: table;
     color: #333;
-    border-color: #628c93;
+    border-color: #57bdc9;
 }
 
 .bg-block h4:before {
@@ -1235,7 +1235,7 @@ dl.dl_number dd {
     padding: 0 0 1em;
     margin-bottom: 1em;
     position: relative;
-    border: 5px solid #eaf3f5;
+    border: 5px solid #57bdc942;
     padding: 4%;
     background: #fff;
     margin-bottom: 70px;
@@ -1276,10 +1276,10 @@ dl.dl_number dd {
     width: 0;
     height: 0;
     bottom: 0;
-    right: 50%;
+    right: 48.8%;
     margin: 0 -35px -100px 0;
     border: 50px solid transparent;
-    border-top: 25px solid #83b7c0;
+    border-top: 25px solid #57bdc9;
 }
 
 .flow-block.flow-right.last-item::after {
@@ -1328,7 +1328,7 @@ dl.dl_number dd {
     content: "";
     top: 2.6rem;
     right: 0;
-    background: #628c93;
+    background: #57BDC9;
     border-radius: 1px;
     width: 15px;
     height: 3px;
@@ -1339,7 +1339,7 @@ dl.dl_number dd {
     content: "";
     top: 2.6rem;
     right: 0;
-    background: #628c93;
+    background: #57BDC9;
     border-radius: 1px;
     width: 15px;
     height: 3px;
@@ -1394,7 +1394,7 @@ dl.dl_number dd {
     top: 26px;
     bottom: auto !important;
     left: 0;
-    background: #dceef0;
+    background: #CBE9ED;
     height: 1.6em;
     width: 1.6em;
     border-radius: 50%;
@@ -1423,7 +1423,7 @@ dl.dl_number dd {
     top: 30px;
     bottom: auto !important;
     left: 0.4em;
-    color: #628c93;
+    color: #57BDC9;
     font-weight: bold;
     border: none;
     background: none;
@@ -1445,7 +1445,7 @@ dl.dl_number dd {
     font-size: 26px;
     bottom: auto !important;
     left: 0px;
-    background: #f1dce3;
+    background: #fde9cb;
     height: 1.6em;
     width: 1.6em;
     border-radius: 50%;
@@ -1459,7 +1459,7 @@ dl.dl_number dd {
     top: 0.3em;
     bottom: auto !important;
     left: 0.5em;
-    color: #b3184a;
+    color: #FBA31E;
     font-weight: bold;
     border: none;
 }

@@ -6,6 +6,7 @@
             var target_element = '#' + $(this).data('href');
             var target = $(target_element);
             var offset = 120;
+            console.log(target_element)
             gotoanchor(target);
         });
 
